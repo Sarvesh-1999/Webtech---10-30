@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Learn Forms</h1>
+
+    <fieldset>
+      <legend>Employee Application Form</legend>
+      <form>
+        <label for="username">Username : </label>
+        <input
+          type="text"
+          id="username"
+          placeholder="Enter Username"
+          name="username"
+          required
+        />
+        <sup style="color: red">*</sup>
+
+        <br /><br />
+
+        <label for="gender">Gender : </label>
+        <label for="male">male</label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="female">female</label>
+        <input type="radio" id="female" name="gender" value="female" />
+
+        <br /><br />
+
+        <label for="email">Email : </label>
+        <input type="email" placeholder="Enter Email" id="email" name="email" />
+
+        <br /><br />
+        <button>Submit</button>
+      </form>
+    </fieldset>
+
+    
+  </body>
+</html>
