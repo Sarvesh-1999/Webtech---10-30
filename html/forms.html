@@ -35,10 +35,64 @@
         <input type="email" placeholder="Enter Email" id="email" name="email" />
 
         <br /><br />
+
+        <label for="password">Password : </label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter Password"
+        />
+
+        <br /><br />
+
+        <label for="dob">D.O.B : </label>
+        <input type="date" name="dob" id="dob" />
+
+        <br /><br />
+
+        <label for="hobbies">Hobbies : </label>
+
+        <label for="coding">Coding</label>
+        <input type="checkbox" name="hobbies" id="coding" value="coding" />
+        <label for="gaming">Gaming</label>
+        <input type="checkbox" name="hobbies" id="gaming" value="gaming" />
+
+        <br /><br />
+
+        <label for="color">Color : </label>
+        <input type="color" name="color" id="color" />
+
+        <br /><br />
+
+        <label for="country">Country : </label>
+        <select name="country" id="country">
+          <option value="" disabled selected>Select country</option>
+          <option value="ind">IND</option>
+          <option value="aus">AUS</option>
+          <option value="eng">ENG</option>
+        </select>
+
+        <br><br>
+
+        <label for="course">Course : </label>
+        <input type="text" name="course" id="course" list="courseList" required>
+        <sup style="color: red;">*</sup>
+        <datalist id="courseList">
+          <option value="Java Fullstack">Java Fullstack</option>
+          <option value="Python Fullstack">Python Fullstack</option>
+          <option value="Mern Stack">Mern Stack</option>
+        </datalist>
+
+        <br><br>
+
+        <label for="resume">Resume : </label>
+        <input type="file" name="resume" id="resume" multiple>
+
+
+        <br /><br />
         <button>Submit</button>
       </form>
     </fieldset>
-
-    
   </body>
 </html>
