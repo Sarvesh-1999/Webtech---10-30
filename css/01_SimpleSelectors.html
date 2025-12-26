@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        background-color: aliceblue;
+        font-family: cursive;
+      }
+
+      /* used to target single element uniquely */
+      #box1 {
+        background-color: orange;
+      }
+
+      /* used to target multiple same element */
+      h2 {
+        background-color: lightblue;
+        font-family: fantasy;
+      }
+
+      /* used to target multiple same or diffrent element */
+      .content {
+        background-color: lightpink;
+        color: red;
+      }
+      .divcontent {
+        background-color: yellow;
+      }
+
+      /* used to group multiple element */
+      #navbar,
+      .sidebar,
+      footer {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h1>Learn Simple Selectors</h1>
+    </center>
+
+    <div id="box1">Target me using ID selector</div>
+
+    <h2>Target me using Element selector</h2>
+    <h2>Target me using Element selector</h2>
+    <h2>Target me using Element selector</h2>
+
+    <h3 class="content">Target me using Class selector</h3>
+    <h3 class="content">Target me using Class selector</h3>
+    <div class="content divcontent">Target me using Class selector</div>
+    <section class="content">Target me using Class selector</section>
+    <article class="content">Target me using Class selector</article>
+
+    <nav id="navbar">Target me using group selector</nav>
+    <aside class="sidebar">Target me using group selector</aside>
+    <footer>Target me using group selector</footer>
+  </body>
+</html>
