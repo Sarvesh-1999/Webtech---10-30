@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      h1 {
+        background-color: yellow;
+        padding: 10px;
+        font-size: 12px;
+        text-align: center;
+        transition: 2s;
+      }
+      /* mobile M */
+      @media (min-width: 375px) {
+        h1 {
+          background-color: lightblue;
+        }
+      }
+
+      /* mobile L */
+      @media (min-width: 425px) {
+        h1 {
+          background-color: royalblue;
+          color: white;
+          font-size: 14px;
+        }
+      }
+
+      /* tablet  */
+      @media (min-width: 768px) {
+        h1 {
+          background-color: pink;
+          color: white;
+          font-size: 16px;
+        }
+      }
+
+      /* laptop  */
+      @media (min-width: 1024px) {
+        h1 {
+          background-color: black;
+          color: white;
+          font-size: 20px;
+        }
+      }
+
+      /* laptop L */
+      @media (min-width: 1440px) {
+        h1 {
+          background-color: blueviolet;
+          color: white;
+          font-size: 24px;
+          padding: 20px;
+        }
+      }
+      .container {
+        min-height: 80vh;
+        width: 100%;
+        background-color: gainsboro;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+      }
+      .items {
+        border: 1px solid black;
+        height: 300px;
+        width: 100%;
+        background-color: white;
+      }
+
+      /* tablet  */
+      @media (min-width: 768px) {
+        .container {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      /* laptop  */
+      @media (min-width: 1024px) {
+        .container {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+
+      /* laptop L */
+      @media (min-width: 1440px) {
+        .container {
+          grid-template-columns: repeat(5, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Learn Media Query - Resposive Webpage</h1>
+
+    <section class="container">
+      <div class="items"></div>
+      <div class="items"></div>
+      <div class="items"></div>
+      <div class="items"></div>
+      <div class="items"></div>
+      <div class="items"></div>
+      <div class="items"></div>
+      <div class="items"></div>
+      <div class="items"></div>
+      <div class="items"></div>
+      <div class="items"></div>
+      <div class="items"></div>
+      <div class="items"></div>
+      <div class="items"></div>
+      <div class="items"></div>
+      <div class="items"></div>
+    </section>
+  </body>
+</html>
